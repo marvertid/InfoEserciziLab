@@ -1,4 +1,4 @@
 # Informatica - Esercizi Laboratorio
-Questo file è a solo scopo di organizazzione gli esercizi sono classificati come diversi **branch**.
+Questa repository contiene tutti gli esercizi di _Informatica Laboratorio_ del **4** e **5** anno.
 
-<ins>***Per selezionare gli esercizi cambiare branch***</ins>
+Essa è suddivisa in **due** cartelle, contenenti rispettivamente gli esercizi suddivisi per argomento.
