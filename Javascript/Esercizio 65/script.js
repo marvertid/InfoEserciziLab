@@ -6,9 +6,15 @@ un peso regolare.
 MARVERTI DIEGO 4AI*/
 let inputKg = document.getElementById("inputKG");
 let inputM = document.getElementById("inputM");
+let output = document.getElementById("output");
 
-function check() {
-    if(Number.(inputKg.value)
+function calculate() {
+    if (!Number.isNaN(Number.parseFloat(inputM.value) && Number.isNaN(Number.parseFloat(inputKg.value)))) {
+        output.style.color = "black";
+        output.textContent = (inputKg.value / inputM.value ** 2).toFixed(2);
+    }else {
+        output.textContent = "Errore!";
+        output.style.color = "red";
+    }
+
 }
-
-Number.is
