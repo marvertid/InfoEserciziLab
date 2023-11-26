@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="author" content="MARVERTI DIEGO 4AI" />
+        <title>ESERCIZIO 63</title>
+    </head>
+    <body>
+        <h1>Esercizio 63</h1>
+        <form>
+            <p>
+                <input type="number" id="inputNumber" required="required" />
+            </p>
+            <p>
+                <input type="button" value="Aggiungi numero" onclick="add()" />
+                <input type="button" value="Valore Minimo" onclick="minValue()" />
+                <input type="button" value="Valore Massimo" onclick="maxValue()" />
+                <input type="button" value="Media aritmetica" onclick="avg()" />
+                <input type="reset" value="Cancella tutto" />
+            </p>
+            <p>
+                <p>INPUT:</p>
+                <output id="showInput" for="inputNumber" style="display: block"></output>
+                <p class="showOut" >Valore Minimo:
+                <output id="outMin" for="inputNumber"></output>
+                </p>
+                <p class="showOut" >Valore Massimo:
+                <output id="outMax" for="inputNumber"></output>
+                </p>
+                <p class="showOut" >Media aritmetica:
+                <output id="outAvg" for="inputNumber"></output>
+                </p>
+            </p>
+        </form>
+
+        <script src="script.js"></script>
+    </body>
+</html>
