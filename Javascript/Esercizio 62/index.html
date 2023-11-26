@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="author" content="MARVERTI DIEGO 4AI" />
+        <title>ESERCIZIO 62</title>
+    </head>
+    <body>
+        <h1>Esercizio 62</h1>
+        <form>
+            <p>
+                <input type="number" id="inputNumber" required="required" max="10" min="-10" />
+            </p>
+            <p>
+                <input type="button" value="Aggiungi numero" onclick="add()" />
+                <input type="button" value="Ordina" onclick="sort()" />
+                <input type="reset" value="Cancella tutto" />
+            </p>
+            <p>
+                <p>INPUT:</p>
+                <output id="output" for="inputNumber"></output>
+                <p class="showOut" >OUTPUT ORDINE CRESCENTE:</p>
+                <output id="sortedOut1" for="inputNumber"></output>
+                <p class="showOut">OUTPUT ORDINE DECRESCENTE:</p>
+                <output id="sortedOut2" for="inputNumber"></output>
+            </p>
+        </form>
+        
+        <script src="script.js"></script>
+    </body>
+</html>
