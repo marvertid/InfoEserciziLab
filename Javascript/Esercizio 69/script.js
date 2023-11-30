@@ -1,44 +1,35 @@
-/*Scrivere una funzione che permetta di calcolare la media geometrica fra 2, 3, 4 o 5 valori positivi;
-la media geometrica di n termini è la radice n-esima del prodotto degli n valori
+/*Realizzare un’applicazione per l’acquisizione di dati personali. Mediante un form HTML, sono
+richiesti all’utente nome, cognome e indirizzo e-mail; quest’ultimo, affinché si sia certi della sua
+correttezza, dovrà essere richiesto due volte in due distinti campi. Validare l’e-mail dell’utente
+confrontando i due indirizzi acquisiti, ignorando però gli eventuali punti presenti prima della
+chiocciola (ad esempio, il controllo è positivo per “ing.mario.rossi@gmail.com” e
+“ingmariorossi@gmail.com”).
 MARVERTI DIEGO 4AI*/
 
-let inputViewer = document.getElementById("inputViewer");
+let inputMail = document.getElementById("email");
+let emailConfirm = document.getElementById("emailConfirm");
 let output = document.getElementById("output");
-let input = document.getElementById("inputN");
-let arr = [];
 
-let i = 0;
-function add() {
-    if (input.checkValidity()) {
-        if (i < 5) {
-            arr[i] = input.value;
-            inputViewer.textContent = arr;
-            i++;
+function signup() {
+    let temp = [];
+    let temp1 = [];
+    if (document.forms[0].checkValidity()) {
+        temp = emailConfirm.value.split("@", 2);
+        temp[0] += "@"
+        temp[0] = temp[0].replaceAll(".", "");
+        temp1 = inputMail.value.split("@", 2);
+        temp1[0] += "@"
+        temp1[0] = temp1[0].replaceAll(".", "");
+
+        if (temp[0] == temp1[0] && temp[1] == temp1[1]) {
+            output.textContent = "Sign up effettuato con successo!";
+            output.style.color = "green";
         } else {
-            output.textContent = "Massimo numero di numeri raggiunto!"
+            output.textContent = "Email non uguale!";
             output.style.color = "red";
         }
-
     } else {
-        output.textContent = "Errore in input!";
+        output.textContent = "Indirizzo email non valido!"
         output.style.color = "red";
     }
-
-}
-
-function geom() {
-    let geoSum = 1;
-    if (arr.length > 1) {
-        for (let n of arr) {
-            geoSum = (geoSum * n) ** (1/n);
-        }
-        output.textContent = "Media geometrica: " + geoSum.toFixed(4);
-        output.style.color = "black";
-    } else {
-        output.textContent = "Numero di numeri minimo non superato!"
-        output.style.color = "red";
-    }
-
-
-    
 }

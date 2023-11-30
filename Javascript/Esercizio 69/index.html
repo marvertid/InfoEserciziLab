@@ -3,25 +3,34 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="author" content="MARVERTI DIEGO 4AI" />
-        <title>ESERCIZIO 68</title>
+        <title>ESERCIZIO 69</title>
     </head>
     <body>
-        <h1>Esercizio 68</h1>
+        <h1>Esercizio 69
+        </h1>
         <form>
             <p> 
-                <label for="inputN" style="display: block">Numero:</label>
-                <input type="number" id="inputN" name="inputN" />
+                <label for="inputNome" style="display: block;">Nome:</label>
+                <input type="text" id="inputNome" name="inputNome" />
+            </p>
+            <p> 
+                <label for="inputCognome" style="display: block;">Cognome:</label>
+                <input type="text" id="inputCognome" name="inputCognome" />
+            </p>
+            <p> 
+                <label for="email" style="display: block;">Indirizzo Mail:</label>
+                <input type="email" id="email" name="email" />
+            </p>
+            <p> 
+                <label for="emailConfirm" style="display: block;">Conferma Indirizzo Mail:</label>
+                <input type="email" id="emailConfirm" name="emailConfirm" />
             </p>
             <p>
-                <input type="button" value="Aggiungi Numero" onclick="add()" />
-                <input type="button" value="Media geometrica" onclick="geom()" />
+                <input type="button" value="Sign up" onclick="signup()" />
                 <input type="reset" value="Cancella tutto" />
             </p>
             <p>
-                <output id="inputViewer" for="inputN"></output>
-            </p>
-            <p>
-                <output id="output" for="InputN"></output>
+                <output id="output" for="InputNome inputCognomne email emailConfirm"></output>
             </p>
         </form>
 
