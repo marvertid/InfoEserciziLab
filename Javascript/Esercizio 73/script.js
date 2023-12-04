@@ -7,14 +7,17 @@ MARVERTI DIEGO 4AI*/
 let inputText = document.getElementById("text");
 let inputLetter = document.getElementById("input");
 let output = document.getElementById("output");
-
 inputText.onkeydown = function () {
+	let text = [];
 	let letter = [];
 	letter = inputLetter.value;
-	
-	let text = [];
-	text = inputText.split("");
+	text = inputText.value.split("");
+
 	if (text.indexOf(letter[0]) != -1) {
-		
+		output.textContent = "Non lipogramma!"
+		output.style.color = "red";
+	} else {
+		output.textContent = "Lipogramma!"
+		output.style.color = "green";
 	} 
 }
