@@ -12,15 +12,29 @@ namespace Esercizio_8
             int nLett;
             Console.WriteLine("Inserire il numero di lettere: ");
             int.TryParse(Console.ReadLine(), out nLett);
-            Console.WriteLine("A");
-            for (int i = 2; i < nLett; i++)
+            char lettera;
+            char lettMax;
+            char letTemp;
+            for (int i = 0; i <= nLett; i++)
             {
-                Console.Write("A");
-                for (int j = 1; j < i; j++)
-                {
-                    Console.Write("A");
-                    Console.Write("A");
-
+                lettera = 'A';
+                lettMax = (char)(i + lettera);
+                for (int j = 0; j <= i; j++)
+                { 
+                    if (lettera < lettMax)
+                    {
+                        Console.Write(lettera);
+                        lettera++;
+                        
+                    } else
+                    {
+                        letTemp = (char) (lettera - 1);
+                        for (int k = i - 1; k > 0; k--)
+                        {
+                            letTemp--;
+                            Console.Write(letTemp);
+                        }
+                    }
                 }
                 Console.WriteLine();
             }
