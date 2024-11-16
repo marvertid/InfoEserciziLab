@@ -15,13 +15,16 @@
 				$arr = array();
 				for ($i = 0; $i < 10; $i++) {
 					do {
-						$arr[$i] = random_int(1, 1000);
-					} while(!str_contains(implode("", $arr), $arr[$i]));
+						$num = random_int(1, 10);
+					} while(isset($arr[$num]));
+
+					$arr[$num] = $num;
 				}
 
 				return $arr;
 			}
-			print_r(randomUnique())
+			$arr = randomUnique();
+			echo implode(" - ", $arr)
 		?>
 	</body>
 </html>
