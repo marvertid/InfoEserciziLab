@@ -28,15 +28,17 @@ essi (boolean, integer, float o string)
 			function findArrayTypes($array) {
 				$output = " [";
 				foreach ($array as $value) {
-					$output .= " " . findType($value) ." ,";
+					$output .= " " . findType($value) . " ,";
 				}
+				$output = substr($output, 0, -1);
 				$output .= " ]";
 
 				return $output;
 			}
 
 			$array = ["ciao", 47, true, false, 33, 2.1, "22", "bella"];
-			echo findArrayTypes($array);
+			echo "<b>Array</b>: " . implode(", ", $array) . "<br /> ";
+			echo "<b>Tipi dell'array</b>: " . findArrayTypes($array);
 		?>
 	</body>
 </html>
