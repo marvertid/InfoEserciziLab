@@ -9,14 +9,15 @@ priva di caratteri multibyte e aver eliminato eventuali segni di punteggiatura (
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="author" content="MARVERTI DIEGO 5AI" />
-		<title>ESERCIZIO 49</title>
+		<title>ESERCIZIO 50</title>
 	</head>
 	<body>
-		<h1>Esercizio 49</h1>
+		<h1>Esercizio 50</h1>
 		<h2>Marverti Diego</h2>
 		<?php
 			define("PUNCTUATION", [",", ";", ".", ":", "!", "?"]);
-			define("VOWELS", ["a", "e", "i", "o", "u"]);			
+			define("VOWELS", ["a", "e", "i", "o", "u"]);	
+
 			function isMb($string): bool {
 				return !(strlen($string) == mb_strlen($string));
 			}
