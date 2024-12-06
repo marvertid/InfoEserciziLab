@@ -14,7 +14,7 @@ inoltre, la classe di appartenenza -->
 		<?php
 
 		function isValidIP($ip): bool {
-			$arrayS = explode(".", $_POST["inputIP"]);
+			$arrayS = explode(".", $ip);
 				if (count($arrayS) == 4) {
 					foreach ($arrayS as $number) {
 						if (is_numeric($number) && $number <= 255) {
