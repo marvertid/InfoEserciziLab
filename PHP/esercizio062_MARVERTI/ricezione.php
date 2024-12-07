@@ -3,11 +3,11 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="author" content="MARVERTI DIEGO 5AI" />
-		<title> Esercizio 2 </title>
+		<title> Esercizio 62 </title>
 	</head>
 
 	<body>
-		<h1>Esercizio 2 Ricezione Dati</h1>
+		<h1>Esercizio 62 Ricezione Dati</h1>
 		<h2>Marverti Diego</h2>
 		<?php
 

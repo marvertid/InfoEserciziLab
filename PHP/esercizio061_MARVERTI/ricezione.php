@@ -5,11 +5,11 @@ inoltre, la classe di appartenenza -->
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="author" content="MARVERTI DIEGO 5AI" />
-		<title> Esercizio 1 </title>
+		<title> Esercizio 61 </title>
 	</head>
 
 	<body>
-		<h1>Esercizio 1 Ricezione Dati</h1>
+		<h1>Esercizio 61 Ricezione Dati</h1>
 		<h2>Marverti Diego</h2>
 		<?php
 
