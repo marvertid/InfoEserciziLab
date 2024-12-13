@@ -51,12 +51,18 @@
 					   <tr>
 						<td colspan=3><b>Voto ultimi 5 esami</b></td>
 					  </tr>";
+					  for($i = 0; $i < 5; $i++) {
+					  	echo "<tr>
+							<td><b>Voto Esame " . $i + 1 . ": </td>
+							<td>" , isset($data["lodeEsame"][$i]) ? $data["votoEsame"][$i] . " e lode" : $data["votoEsame"][$i]; 
+							echo "</td>
+					  	</tr>";
+					  }
 			echo "</table>";
 		}
 		
 		if($_SERVER["REQUEST_METHOD"] === "POST") {
 			generateTableOverData($_POST);
-			echo "<pre>" , var_dump($_POST) , "</pre>";	
 		}
 		?>
 	</body>

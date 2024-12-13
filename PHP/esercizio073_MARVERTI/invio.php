@@ -54,45 +54,45 @@ Visualizzare nel modo che si ritiene più consono i dati acquisiti e validati --
 			<fieldset>
 				<legend>Dati Scolastici</legend>
 				<p>
-					<label for="unibolo unipr unimore unife">Universit&agrave; di appartenenza: </label>
-					<label for="unibo" class="inline">UniBo</label><input type="radio" value="unibo" name="uni" required="required"/><br />
-                    <label for="unipr" class="inline">UniPr</label><input type="radio" value="unipr" name="uni" required="required"/><br />
-					<label for="unimore" class="inline">UniMore</label><input type="radio" value="unimore" name="uni" required="required"/><br />
-					<label for="unife" class="inline">UniFe</label><input type="radio" value="unipr" name="uni" required="required"/>
+					<p>Universit&agrave; di appartenenza: </p>
+					<label class="inline">UniBo<input type="radio" value="unibo" name="uni" required="required"/><br />
+                    <label class="inline">UniPr<input type="radio" value="unipr" name="uni" required="required"/></label><br />
+					<label class="inline">UniMore<input type="radio" value="unimore" name="uni" required="required"/></label><br />
+					<label class="inline">UniFe<input type="radio" value="unipr" name="uni" required="required"/></label>
 				</p>
 				<p>
-					<label for="votoEsameStato" >Voto Esame di Stato:</label>
+					<label >Voto Esame di Stato: </label>
 					<input type="number" min="60" max="100" step="1" name="votoEsameStato" />
-					<label class="inline">Lode: </label><input type="checkbox" name="lode" />
+					<label class="inline">Lode: <input type="checkbox" name="lode" /></label>
 				</p>
 				<p>
-					<label>Voto Ultimi 5 Esami: </label>
+					<p>Voto Ultimi 5 Esami: </p>
 					<hr />
-					<label class="inline" for="votoEsame[]">Voto esame 1: </label><input type="number" min="0" max="30" name="votoEsame[]" required="required"/>
-					<label class="inline" for="creditoEsame[]">Crediti associati: </label><input type="number" min="1" max="10" name="creditoEsame[]" required="required"/><br />
-					<label class="inline" for="lodeEsame[]">Lode: </label><input type="checkbox" name="lode" name="lodeEsame[]"/><br />
+					<label class="inline" >Voto esame 1: <input type="number" min="0" max="30" name="votoEsame[]" required="required"/></label>
+					<label class="inline" >Crediti associati: <input type="number" min="1" max="10" name="creditoEsame[]" required="required"/></label><br />
+					<label class="inline" >Lode: <input type="checkbox" name="lodeEsame[0]"/><br /></label>
 					<hr />
-					<label class="inline" for="votoEsame[]">Voto esame 2: </label><input type="number" min="0" max="30" name="votoEsame[]" required="required"/>
-					<label class="inline" for="creditoEsame[]">Crediti associati: </label><input type="number" min="1" max="10" name="creditoEsame[]" required="required"/><br />
-					<label class="inline" for="lodeEsame[]">Lode: </label><input type="checkbox" name="lode" name="lodeEsame[]" /><br />
+					<label class="inline" >Voto esame 2: <input type="number" min="0" max="30" name="votoEsame[]" required="required"/></label>
+					<label class="inline" >Crediti associati: <input type="number" min="1" max="10" name="creditoEsame[]" required="required"/></label><br />
+					<label class="inline" >Lode: <input type="checkbox" name="lodeEsame[1]" /><br /></label>
 					<hr />
-					<label class="inline" for="votoEsame[]">Voto esame 3: </label><input type="number" min="0" max="30" name="votoEsame[]" required="required"/>
-					<label class="inline" for="creditoEsame[]">Crediti associati: </label><input type="number" min="1" max="10" name="creditoEsame[]" required="required"/><br />
-					<label class="inline" for="lodeEsame[]">Lode: </label><input type="checkbox" name="lode" name="lodeEsame[]" /><br />
+					<label class="inline" >Voto esame 3: <input type="number" min="0" max="30" name="votoEsame[]" required="required"/></label>
+					<label class="inline" >Crediti associati: <input type="number" min="1" max="10" name="creditoEsame[]" required="required"/></label><br />
+					<label class="inline" >Lode: <input type="checkbox" name="lodeEsame[2]" /><br /></label>
 					<hr />
-					<label class="inline" for="votoEsame[]">Voto esame 4: </label><input type="number" min="0" max="30" name="votoEsame[]" required="required"/>
-					<label class="inline" for="creditoEsame[]">Crediti associati: </label><input type="number" min="1" max="10" name="creditoEsame[]" required="required"/><br />
-					<label class="inline" for="lodeEsame[]">Lode: </label><input type="checkbox" name="lode" name="lodeEsame[] " /><br />
+					<label class="inline" >Voto esame 4: <input type="number" min="0" max="30" name="votoEsame[]" required="required"/></label>
+					<label class="inline" >Crediti associati: <input type="number" min="1" max="10" name="creditoEsame[]" required="required"/></label><br />
+					<label class="inline" >Lode: <input type="checkbox" name="lodeEsame[3]"  /><br /></label>
 					<hr />
-					<label class="inline" for="votoEsame[]">Voto esame 5: </label><input type="number" min="0" max="30" name="votoEsame[]" required="required"/>
-					<label class="inline" for="creditoEsame[]">Crediti associati: </label><input type="number" min="1" max="10" name="creditoEsame[]" required="required"/><br />
-					<label class="inline" for="lodeEsame[]">Lode: </label><input type="checkbox" name="lode" name="lodeEsame[]" /><br />
+					<label class="inline" >Voto esame 5: <input type="number" min="0" max="30" name="votoEsame[]" required="required"/></label>
+					<label class="inline" >Crediti associati: <input type="number" min="1" max="10" name="creditoEsame[]" required="required"/></label><br />
+					<label class="inline" >Lode: <input type="checkbox" name="lodeEsame[4]" /><br /></label>
 					<hr />
 				</p>
 			</fieldset>
 			<fieldset>
 				<legend>Trattamento dati personali</legend>
-				<input type="checkbox" name="trattamentoDati" required="required"/><label for="trattamentoDati" class="inline"> Consenso al trattamento dei dati personali al fine di creare una reportistica</label>
+				<input type="checkbox" name="trattamentoDati" id="trattamentoDati" required="required"/><label for="trattamentoDati" class="inline"> Consenso al trattamento dei dati personali al fine di creare una reportistica</label>
 			</fieldset>
 			<input type="submit" value="Invio" />
 		</form>
