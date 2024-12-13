@@ -56,24 +56,24 @@ HTML riportante tutti i dati acquisiti. -->
 		<form action="ricezione.php" method="post">
 			<fieldset>
 				<legend>Raccolta Dati</legend>
-				<p><label>Data e ora Evento: <input type="datetime-local" name="dateTime"/></label></p>
+				<p><label>Data e ora Evento: <input type="datetime-local" name="dateTime" required="required"/></label></p>
 				<p>
 					<label for="comProvReg"> Regione, Provincia, Comune</label>
-					<select name="regioni" id="comProvReg">
+					<select name="regioni" id="comProvReg" required="required">
 						<?php
 							foreach ($arrayReg as $reg) {
 								echo "<option>$reg</option>";
 							}
 						?>
 					</select>
-					<select name="provincia" id="comProvReg">
+					<select name="provincia" id="comProvReg" required="required">
 						<?php
 							foreach ($arrayProv as $prov) {
 								echo "<option>$prov</option>";
 							}
 						?>
 					</select>
-					<select name="comune" id="comProvReg">
+					<select name="comune" id="comProvReg" required="required">
 						<?php
 							foreach ($arrayCom as $com) {
 								echo "<option>$com</option>";
@@ -82,21 +82,21 @@ HTML riportante tutti i dati acquisiti. -->
 					</select>
 				</p>
 				<p><label for="mercalli">Valutazione intensit&agrave;</label>
-					<select name="mercalli" id="mercalli">
+					<select name="mercalli" id="mercalli" required="required">
 						<?php
 							foreach ($arrayMercalli as $value) {
 								echo "<option>$value</option>";
 							}
 						?>
 				</select></p>
-				<p><label>Piano nel quale si &egrave; avvertita la scossa <select name="pianoSelect">
+				<p><label>Piano nel quale si &egrave; avvertita la scossa <select name="pianoSelect" required="required">
 					<option>Interrato</option>
 					<option>Piano terra</option>
 					<option>1 ÷ 10</option>
 					<option>Superiore a 10</option>
 				</select></label>
 				</p>
-				<p><label>Numero totale di piani <input type="number" name="numPiani" max="200" min="1"/></label></p>
+				<p><label>Numero totale di piani <input type="number" name="numPiani" max="200" min="1" /></label></p>
 			</fieldset>
 			<input type="submit" value="Invio" />
 		</form>
