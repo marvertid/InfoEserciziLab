@@ -1,0 +1,7 @@
+Database RecensioniCulinarie {
+	Critico(_Id_, Nome, Cognome, DataN, Curriculum, Foto, LinkTwitter)
+	Ristorante(_Id_, Nome, Tipologia, Via, Civico, Prenotazione, Parcheggio, Animali, NStelleM)
+	Recensione(_Id_, Titolo, Testo, DataP, VotoL, VotoS, VotoM, VotoC, CodCritico, CodRistorante)
+		FK: CodCritico REF Critico(Id)
+			CodRistorante REF Ristorante(Id)
+}
