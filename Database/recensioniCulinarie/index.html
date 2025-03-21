@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Richiesta dati</title>
+        <meta charset="UTF-8" />
+        <meta name="author" content="MARVERTI DIEGO 5AI" />
+    </head>
+    <body>
+        <h1>Richiesta dati</h1>
+        <form method="post" action="ricezione.php">
+            <fieldset>
+                <legend>Richiesta dati recensione</legend>
+                <p>
+                    <label for="nome">Nome critico </label><input type="text" name="nome" required="required" />
+                </p>
+                <p>
+                    <label for="cognome">Cognome critico </label><input type="text" name="cognome" required="required" />
+                </p>
+                <p>
+                    <label for="data">Data recensione </label><input type="date" name="data" required="required" />
+                </p>
+            </fieldset>
+            <p>
+                <input type="submit" value="Invio" />
+                <input type="reset" value="Reset" />
+            </p>
+        </form>
+    </body>
+</html>

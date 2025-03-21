@@ -17,7 +17,7 @@ CREATE TABLE Ristorante (
 	Nome VARCHAR(20) NOT NULL,
 	Tipologia VARCHAR(20) NOT NULL,
 	Via VARCHAR(20) NOT NULL,
-	Civico VARCHAR(20) NOT NULL,
+	Civico VARCHAR(6) NOT NULL,
 	Prenotazione BOOL NOT NULL,
 	Parcheggio BOOL NOT NULL,
 	Animali BOOL NOT NULL,
