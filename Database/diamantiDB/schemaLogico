@@ -1,0 +1,7 @@
+DiamantiDB {
+	Diamante(_Id_, NrCertificato, Carati, Taglio, Colore, Purezza, Brillantezza, DataRilascioCF)
+
+	Anello(_codDiamante_, Nome, Peso, Misura, Modello, Costo, Colore, Montatura)
+	
+	IstitutoGemmologico(Id, Nome, Citta, Nazione, codAnello)
+}
