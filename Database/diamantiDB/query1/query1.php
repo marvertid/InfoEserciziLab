@@ -22,8 +22,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 	$sth->bindParam(":anno", $anno, PDO::PARAM_STR);
     $sth->bindParam(":citta", $citta, PDO::PARAM_INT);
 
-	if()
-
 	$sth->execute();
 
 	$result = $sth->fetchAll(PDO::FETCH_ASSOC);
