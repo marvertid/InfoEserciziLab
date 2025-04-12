@@ -1,10 +1,10 @@
 <?php
 if (!isset($_COOKIE['countVisite'])) {
-	$counter = 0;
+	$counter = 1;
 } else {
-	setcookie("countVisite", $counter + 1);
 	$counter = $_COOKIE['countVisite'];
 }
+setcookie("countVisite", $counter + 1);
 ?>
 
 <!DOCTYPE HTML>
