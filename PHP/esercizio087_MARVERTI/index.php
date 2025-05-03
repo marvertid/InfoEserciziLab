@@ -1,15 +1,22 @@
 <?php
-$max = 0;
-$min = 0;
-$tot = 0;
-$nVal = 0;
-$media = 0;
-
-$arrayNum = array();
+if (isset($_COOKIE['arrayNum'])) {
+	$arrayNum = $_COOKIE['arrayNum'];
+	$count = count($_COOKIE['arrayNum']);
+}else 
+	$arrayNum = array();
+	$count = 0;
 if (isset($_POST['numero'])) {
-	setcookie("arrayNum", $arrayNum);
 	array_push($arrayNum, (int) $_POST['numero']);
+	setcookie("arrayNum[$count]", $_POST['numero'], time() + 60 * 20, "/");
 	var_dump($arrayNum);
+	$max = max($arrayNum);
+	$min = min($arrayNum);
+	$tot = array_sum($arrayNum);
+	$nVal = count($arrayNum);
+	if ($count == 0) 
+		$media = $tot;
+	else 
+		$media = $tot / $count ;
 }
 
 
